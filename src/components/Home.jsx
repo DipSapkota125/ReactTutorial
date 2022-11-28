@@ -3,9 +3,15 @@ import wakanda from "../images/wakanda.png";
 import "./Home.css";
 
 const Home = () => {
+  const heading = {
+    color: "gray",
+    backGroundColor: "red",
+    textAlign: "center",
+    textTransform: "capitalize",
+  };
   return (
     <>
-      <h1 className="heading">Wakanda Forever</h1>
+      <h1 style={heading}>Wakanda Forever</h1>
       <div className="img_div">
         <img src={wakanda} alt="wakanda" />
         <img src={wakanda} alt="wakanda" />
