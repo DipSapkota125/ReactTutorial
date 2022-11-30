@@ -1,12 +1,23 @@
 import "./App.css";
-import About from "./components/About";
-// import Home from "./components/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/home/Home";
+import About from "./components/pages/about/About";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import PageNotFound from "./components/pages/notFound/PageNotFound";
 
 function App() {
   return (
     <>
-      <About />
-      {/* <Home /> */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
