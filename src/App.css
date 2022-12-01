@@ -25,11 +25,17 @@
   cursor: pointer;
 } */
 
-.active {
-  color: brown;
+.myFooter {
+  width: 100%;
+  height: auto;
+  background: purple;
+  padding: 50px 100px;
 }
 
-.myButton {
-  display: flex;
-  justify-content: center;
+.copyRight {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: black;
 }
