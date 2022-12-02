@@ -53,7 +53,9 @@ const Header = () => {
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
-              <Button variant="outline-primary">Sign In</Button>
+              <NavLink to="/login">
+                <Button variant="outline-primary">Sign In</Button>
+              </NavLink>
             </Form>
           </Navbar.Collapse>
         </Container>

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <div>
-        <h1>Bina dheuwake world cup kasari herne!</h1>
+        <h1>Bina Dheuwake world cup kasari herne!</h1>
       </div>
     </>
   );
