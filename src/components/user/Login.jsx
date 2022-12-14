@@ -1,40 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { memo } from "react";
 
-const Login = () => {
-  const [email, setEmail] = useState("");
-  const navigate = useNavigate();
-
-  const handleLogin = () => {
-    localStorage.setItem("login", true);
-    navigate("/");
-  };
-
-  useEffect(() => {
-    let login = localStorage.getItem("login");
-    if (login) {
-      navigate("/");
-    }
-  }, [navigate]);
+const Login = ({ todos, AddTodo }) => {
+  console.log("runs,chalyo");
   return (
     <>
       <div>
-        <h1>My Login Page</h1>
-        <input
-          type="text"
-          placeholder="enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <br />
-        <input type="number" placeholder="enter your password" />
-        <br />
-        <button onClick={handleLogin}>Login</button>
+        <h2>Add to Do</h2>
+        {todos.map((curValue, index) => {
+          return <p key={index}>{curValue + index}</p>;
+        })}
       </div>
 
-      <h1> Value:{email}</h1>
+      <button onClick={AddTodo}>Add Todo</button>
     </>
   );
 };
 
-export default Login;
+export default memo(Login);

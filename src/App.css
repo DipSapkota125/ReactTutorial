@@ -1,41 +1,24 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.heading {
-  text-align: center;
-  text-transform: capitalize;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-  color: gray;
-  margin: 50px 0px;
+/* carousel css */
+#myCarousel .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #f33066;
+  text-decoration: none;
 }
 
-.img_div {
-  display: flex;
-  justify-content: center;
-}
-
-.img_div img {
-  width: 250px;
-  height: 300px;
-  border-radius: 5px;
-  cursor: pointer;
-} */
-
-.myFooter {
-  width: 100%;
-  height: auto;
-  background: purple;
-  padding: 50px 100px;
-}
-
-.copyRight {
-  text-align: center;
-  width: 100%;
-  height: auto;
-  color: white;
-  background-color: black;
+#myCarousel .btn-get-started:hover {
+  background: #f33066;
+  color: #fff;
 }
